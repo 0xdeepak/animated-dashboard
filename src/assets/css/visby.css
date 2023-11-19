@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-thin.otf") format("opentype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-light.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-demibold.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-extrabold.otf") format("opentype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby";
+  src: url("../fonts/visby/Visbycf-heavy.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}

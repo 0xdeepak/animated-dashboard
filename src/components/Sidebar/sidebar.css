@@ -1,0 +1,67 @@
+.app-logo {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: 40px 0 60px;
+  color: var(--color-primary);
+}
+.app-logo span {
+  color: #13a9da;
+}
+
+.sidebar {
+  width: 225px;
+  height: 100%;
+  border-radius: 50px 0 0 50px;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-out;
+}
+.sidebar-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.links-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text-light-1);
+  font-family: "Satoshi-Medium";
+  overflow-y: auto;
+}
+.links-container-top,
+.links-container-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.links-container-link {
+  height: 46px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.links-container-link.active {
+  background-color: var(--color-primary-light);
+  color: var(--text-dark-2);
+}
+.links-container-link-left {
+  display: flex;
+  align-items: center;
+}
+.links-container-link-icon {
+  margin-right: 10px;
+}
+.links-container-link span {
+  color: var(--color-primary);
+}
+.links-container-link.logout {
+  margin-top: 20px;
+}

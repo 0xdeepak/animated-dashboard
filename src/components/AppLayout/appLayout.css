@@ -1,0 +1,16 @@
+.app-container {
+  height: 100svh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+}
+.routes-container {
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 50px 20px 30px;
+}
+.routes-container h2 {
+  font-size: 26px;
+}
