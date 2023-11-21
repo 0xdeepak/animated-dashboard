@@ -1,7 +1,7 @@
 .home-nvabar-container {
   transition: all 1s ease-out;
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-150px);
 }
 .home-navbar {
   display: flex;

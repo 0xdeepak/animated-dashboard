@@ -1,0 +1,30 @@
+
+.totalShares {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 20px 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.totalShares-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--background-dark);
+}
+.totalShares-header-title {
+  font-size: 16px;
+  font-family: "Satoshi-Bold";
+  font-weight: 700;
+}
+.totalShares-header-value {
+  font-size: 18px;
+  font-family: "Satoshi-Black";
+}
+.graph-container {
+  flex: 1;
+}

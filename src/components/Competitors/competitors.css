@@ -1,0 +1,116 @@
+.competitors {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 10px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+}
+.competitors-header {
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--background-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.competitors-header-title {
+  font-size: 16px;
+  font-family: "Satoshi-Bold";
+  font-weight: 700;
+}
+.competitors-header-right {
+  font-size: 12px;
+  height: 35px;
+  padding: 0 15px;
+  text-align: center;
+  background-color: var(--background-dark);
+  border-radius: 10px;
+}
+.competitors-content {
+  font-size: 12px;
+  font-family: "Satoshi-Medium";
+}
+.competitors-content-list-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--background-dark);
+  color: var(--text-light-2);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+.competitors-content-list-header .col-1 {
+  flex: 2;
+  padding-left: 15px;
+  text-align: left;
+}
+.competitors-content-list-header .col-2 {
+  flex: 1;
+}
+.competitors-content-list-header .col-3 {
+  flex: 2;
+}
+.competitors-content-list-header .col-4 {
+  flex: 1;
+}
+.competitors-content-list-header .col-5 {
+  flex: 2;
+}
+.competitors-content-list-header .col-6 {
+  flex: 1;
+}
+.competitors-content-list-header .col-7 {
+  flex: 1;
+  padding-right: 15px;
+}
+.competitors-content-list-container {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secondary) var(--color-primary-light);
+}
+.competitors-content-left-list-container::-webkit-scrollbar {
+  width: 3px;
+}
+.competitors-content-left-list-container::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+.competitors-content-left-list-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+}
+
+.competitors-content-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: right;
+}
+.competitors-content-list-item .col-1 {
+  flex: 2;
+  padding-left: 15px;
+  text-align: left;
+}
+.competitors-content-list-item .col-2 {
+  flex: 1;
+}
+.competitors-content-list-item .col-3 {
+  flex: 2;
+}
+.competitors-content-list-item .col-4 {
+  flex: 1;
+}
+.competitors-content-list-item .col-5 {
+  flex: 2;
+}
+.competitors-content-list-item .col-6 {
+  flex: 1;
+}
+.competitors-content-list-item .col-7 {
+  flex: 1;
+  padding-right: 15px;
+}

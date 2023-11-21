@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("./assets/css/satoshi.css");
 @import url("./assets/css\/visby.css");
 
@@ -7,7 +8,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(241, 242, 255);
+  background-color: rgb(242, 243, 255);
   color: var(--text-dark-1);
 }
 
@@ -38,7 +39,25 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.hidden {
+  transition: all 1.25s ease-out;
+  opacity: 0;
+  transform: translateY(150px);
+}
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }

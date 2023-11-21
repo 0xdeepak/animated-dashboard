@@ -1,0 +1,61 @@
+.smallGridCard {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  min-width: 190px;
+  height: 100%;
+  width: 100%;
+}
+.smallGridCard.hidden {
+  transform: translateX(150px)
+}
+.smallGridCard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.smallGridCard-top-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 10px;
+  background-color: var(--background-dark);
+}
+.smallGridCard-top-left .card-icon {
+  color: var(--color-primary);
+}
+.smallGridCard-top-right {
+  display: flex;
+  align-items: center;
+}
+.smallGridCard-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+.smallGridCard-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.smallGridCard-bottom-left .value {
+  font-size: 24px;
+  font-family: "Satoshi-Black";
+}
+.smallGridCard-bottom-left .title {
+  font-size: 13px;
+  color: var(--text-light-2);
+}
+.smallGridCard-bottom-help {
+  color: var(--color-primary);
+  background-color: var(--background-dark);
+  padding: 3px;
+  border-radius: 50%;
+}

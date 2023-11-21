@@ -9,7 +9,21 @@
   height: 100%;
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px 50px 20px 30px;
+  scrollbar-width: thin;
+  scrollbar-color:  #aceaff var(--color-primary-light);
+}
+.routes-container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+.routes-container::-webkit-scrollbar-track {
+  background: #fff;
+}
+.routes-container::-webkit-scrollbar-thumb {
+  background-color: #aceaff;
+  border-radius: 10px;
 }
 .routes-container h2 {
   font-size: 26px;

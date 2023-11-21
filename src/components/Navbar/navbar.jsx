@@ -4,7 +4,7 @@ import { PiPlusCircleBold } from "react-icons/pi";
 import "./navbar.css";
 import { useEffect, useRef } from "react";
 
-function Navbar() {
+function Navbar({ currentUser, currentProject }) {
   const navbarRef = useRef(null);
 
   useEffect(() => {
@@ -13,18 +13,18 @@ function Navbar() {
 
   return (
     <div className="home-nvabar-container" ref={navbarRef}>
-      <div className="home-navbar" >
+      <div className="home-navbar">
         <div className="home-navbar-left">
           <button className="home-navbar-left-drop-down">
             <SiLightning size={32} className="start-icon" />
-            <span>GOOD LIVES</span>
+            <span>{currentProject}</span>
             <RiArrowDropDownFill size={18} className="end-icon" />
           </button>
           <PiPlusCircleBold size={28} className="home-navbar-left-add" />
         </div>
         <button className="home-navbar-user">
-          <img src="/images/user-avatar.jpg" className="start-icon" alt="user-profile" />
-          <span>DEEPAK</span>
+          <img src={currentUser.photoUrl} className="start-icon" alt="user-profile" />
+          <span>{currentUser.name}</span>
           <RiArrowDropDownFill size={18} className="end-icon" />
         </button>
       </div>
