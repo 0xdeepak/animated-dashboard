@@ -24,6 +24,19 @@
   opacity: 1;
   transform: translateX(0);
 }
+.sidebar-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 5px 3px;
+  background-color: var(--background-dark);
+  display: none;
+}
+.sidebar-close .icon {
+  color: var(--color-primary);
+  height: 18px;
+  width: 18px;
+}
 
 .links-container {
   flex-grow: 1;
@@ -64,4 +77,23 @@
 }
 .links-container-link.logout {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: 0 10px 20px #ddd;
+    transform: translateX(-250px);
+    transition: all 0.5s ease-out
+  }
+  .sidebar.mobile-active {
+    transform: translateX(0);
+  }
+  .sidebar-close {
+    display: block;
+  }
 }

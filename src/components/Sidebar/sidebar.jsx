@@ -8,6 +8,7 @@ import { TbBookmark } from "react-icons/tb";
 import { RiNewspaperLine } from "react-icons/ri";
 import { SlEqualizer } from "react-icons/sl";
 import { TbHelpSquare } from "react-icons/tb";
+import { FaRegWindowClose } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 
 function Sidebar() {
@@ -21,15 +22,22 @@ function Sidebar() {
     return matchRoute(route) ? "#00bffe" : "#919191";
   };
 
+  const closeSidebar = () => {
+    document.getElementById("sidebar").classList.remove("mobile-active");
+  }
+
   useEffect(() => {
     sidebarRef.current.classList.add("sidebar-visible");
   },[])
 
   return (
-    <div className="sidebar" ref={sidebarRef}>
+    <div className="sidebar" id="sidebar" ref={sidebarRef}>
       <h1 className="app-logo">
         c<span>o</span>ncured
       </h1>
+      <button onClick={closeSidebar} className="sidebar-close">
+        <FaRegWindowClose className="icon" />
+      </button>
       <div className="links-container">
         <div className="links-container-top">
           <Link to="/" className={`links-container-link ${matchRoute("") && "active"}`}>
