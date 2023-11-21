@@ -10,8 +10,8 @@ function LineGraph({ id, data, leftMargin, bottomMargin, noOfYIndicators, animat
   useEffect(() => {
     if (graphRef.current) {
       const graphRect = graphRef.current.getBoundingClientRect();
-      canvasRef.current.height = Math.max(graphRect.height, 100);
-      canvasRef.current.width = Math.max(graphRect.width, 200);
+      canvasRef.current.height = Math.max(graphRect.height, 50);
+      canvasRef.current.width = Math.max(graphRect.width, 100);
     }
     if (canvasRef.current && toolTipRef.current && data) {
       const dataX = data.map((item) => item[0]);

@@ -42,6 +42,7 @@
   transform: translateY(-50%);
   z-index: 100;
   display: none;
+  border-radius: 0 6px 6px 0;
 }
 .sidebar-opener .icon {
   height: 22px;
@@ -52,5 +53,11 @@
 @media screen and (max-width: 768px) {
   .sidebar-opener {
     display: block;
+  }
+  .app-container {
+    padding: 5px;
+  }
+  .routes-container {
+    padding: 5px;
   }
 }

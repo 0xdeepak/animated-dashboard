@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .project-header-left {
   display: flex;

@@ -40,18 +40,18 @@
 .shareOfVoice-content {
   display: flex;
   gap: 20px;
-  max-height: 200px;
   padding-right: 25px;
 }
 .shareOfVoice-content-left,
 .shareOfVoice-content-right {
   flex: 1;
+  min-width: 100px;
 }
 .shareOfVoice-content-left {
   display: flex;
 }
 .shareOfVoice-content-left-list {
-  flex: 3;
+  flex: 4;
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -79,6 +79,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
+  max-height: 160px;
   scrollbar-color: var(--color-secondary) var(--color-primary-light);
 }
 .shareOfVoice-content-left-list-container::-webkit-scrollbar {
@@ -109,6 +110,14 @@
   text-align: right;
 }
 .shareOfVoice-content-left-chart {
-  flex: 2;
-  width: 100%;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .shareOfVoice-content {
+    flex-direction: column;
+  }
+  .shareOfVoice-content-left-chart {
+    flex: 0;
+  }
 }
