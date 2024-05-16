@@ -7,7 +7,7 @@ export const userData = {
 
 export const projectData = {
   uid: "1234",
-  projectName: "GOOD LIVES",
+  projectName: "MY PROJECT",
   bounceRate: {
     value: 46.72,
     change: 15,

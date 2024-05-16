@@ -11,7 +11,7 @@ export default function drawGraphOnCanvas({
   const canvas = canvasRef.current;
   let height = canvas.height;
   let width = canvas.width;
-  let ctx = canvas.getContext("2d");
+  let ctx = canvas.getContext("2d", {"willReadFrequently": true});
   ctx.clearRect(0,0, height, width);
   let stepY = Math.round((Math.max(...dataY) - Math.min(...dataY)) / (YIndicators - 1));
   let stepXPx = (width - leftMargin - 10) / (dataX.length - 1);
@@ -88,6 +88,7 @@ export default function drawGraphOnCanvas({
       },
       [animationTime],
     );
+    return intervalId;
   }
 
   function drawDataParameters() {
@@ -152,5 +153,7 @@ export default function drawGraphOnCanvas({
 
   drawBackGrid();
   drawDataParameters();
-  drawDataLine();
+  const animationIntervalId = drawDataLine();
+
+  return animationIntervalId;
 }

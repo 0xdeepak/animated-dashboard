@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import drawGraphOnCanvas from "./drawGraphOnCanvas";
 import "./lineGraph.css";
 
 function LineGraph({ id, data, leftMargin, bottomMargin, noOfYIndicators, animationTime }) {
+  const animationIntervalIdRef = useRef(null);
   const graphRef = useRef(null);
   const canvasRef = useRef(null);
   const toolTipRef = useRef(null);
@@ -16,8 +17,24 @@ function LineGraph({ id, data, leftMargin, bottomMargin, noOfYIndicators, animat
     if (canvasRef.current && toolTipRef.current && data) {
       const dataX = data.map((item) => item[0]);
       const dataY = data.map((item) => item[1]);
-      drawGraphOnCanvas({ canvasRef, toolTipRef, dataX, dataY, leftMargin: leftMargin, bottomMargin: bottomMargin, YIndicators: noOfYIndicators, animationTime });
+      if (animationIntervalIdRef.current) {
+        clearTimeout(animationIntervalIdRef.current);
+        animationIntervalIdRef.current = null;
+      }
+      const newIntervalId = drawGraphOnCanvas({
+        canvasRef,
+        toolTipRef,
+        dataX,
+        dataY,
+        leftMargin: leftMargin,
+        bottomMargin: bottomMargin,
+        YIndicators: noOfYIndicators,
+        animationTime,
+      });
+      animationIntervalIdRef.current = newIntervalId;
     }
+
+    return (() => clearTimeout(animationIntervalIdRef.current))
   }, [canvasRef, data, toolTipRef]);
 
   return (
